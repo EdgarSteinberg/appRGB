@@ -1,0 +1,131 @@
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+main {
+    height: 50vh;
+    background-color: #2B807B;
+    text-align: center;
+} 
+
+.centrar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor {
+    height: 220px;
+    width: 450px;
+    background-color: white;
+    border: 5px solid black;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*Texto*/
+
+#color {
+    font-size: 70px ;
+    font-weight: bold;
+}
+
+/*Boton*/
+
+button {
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    background-color: #008CBA;
+    margin: 15px;
+    padding: 10px 30px;
+    border: 3px solid #008CBA;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #05455A;
+}
+
+/*-------------------------------------------------------*/
+
+footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(23,41,56);
+}
+
+/*Contenedores*/
+
+.contenedor-principal {
+    width: 50vw;
+    max-width: 450px;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+ /*    border-radius: 50px; */
+    border: 5px solid black;
+}
+
+/*Colores RGB*/
+
+.color {   
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label, p {
+    margin: 1px;
+}
+
+
+/*Media*/
+
+@media screen and (max-width:600px) {
+    #contenedor {
+        width: 350px;
+    }
+    #color {
+        font-size: 30px;
+    }
+    button {
+        font-size: 15px;
+    }
+    .contenedor-principal {
+        width: 350px;
+    }
+    .color {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #contenedor {
+        width: 300px;
+    }
+   
+
+    .contenedor-principal {
+        width: 300px;
+    }
+   
+}
